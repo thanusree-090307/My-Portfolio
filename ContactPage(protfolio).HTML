@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Project 1</title></head>
+    <style>
+        body{
+            margin: 0;
+        }
+        #main-title{
+            color:white;
+            text-align: center;
+            background-color: rgb(9,9,78);
+            padding: 10px 10px;
+        }
+        .inline-example 
+            {
+              display: flex; 
+              justify-content: center;
+              align-items: center;
+              background-color:#e5e7eb;
+              padding:15px 0;
+              gap: 20px;
+            }
+            .inline-example a{
+                text-decoration: none;
+                background-color: #1f2a8a;
+                color: white;
+                padding: 8px 12px;
+                border-radius: 6px;
+            }
+             .inline-example a:hover{
+                background-color: #0f1b5f;
+             }
+             .mid{
+                background-color: #f8fafc;
+                padding: 7px;
+             }
+             form{
+                background: white;
+                padding: 20px;
+                border-radius: 15px;
+                width: 470px;
+                margin:20px auto;
+                box-shadow:0 4px 10px rgba(0,0,0,0.1);
+             }
+             input, textarea{
+                width: 90%;
+                padding: 10px;
+                margin: 8px 0;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+             }
+             button{
+                background: #1f2a8a;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+             }
+             button:hover{
+                background-color: #0f1b5f;
+             }
+             .end{
+                background-color:#0a0f3d;
+                color: white;
+                padding: 1px;
+                text-align: center;
+             }
+             .contact-layout{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                width: 800px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+             }
+             .contact-info{
+                background: white;
+                padding: 20px;
+                border-radius: 15px;
+                box-shadow:0 4px 10px rgba(0,0,0,0.1);
+                width: 200px;
+             }
+    </style>
+
+    <body>
+        <div id="main-title">
+            <h1>Contact Me</h1>
+        </div>
+          <div class="inline-example">
+                <a href="HomePage(protfolio).HTML">Home</a>
+                <a href="SkillsPage(protfolio).HTML">Skills</a>
+                <a href="Projectspage(protfolio).HTML">projects</a>
+                <a href="#">Contact</a>
+        </div>
+        <div class="mid">
+            <div class="contact-layout">
+            <form id="contactForm">
+            <fieldset style="border: 2px solid black;">
+            <legend>Get in Touch</legend>
+
+             <label>Name</label><br>
+             <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+             <label>Email</label><br>
+             <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+             <label>Message</label><br>
+            <textarea id="message" rows="5" cols="20" placeholder="Enter your message"></textarea><br><br>
+
+             <button type="submit">Send Message</button>
+
+            </fieldset>
+            </form>
+            <div class="contact-info">
+            <p>Email: thanusree090307@gmail.com</p>
+            <p>Phone: 9949797256</p>
+            </div>
+            </div>
+        </div>
+        <div class="end">
+            <p>ProtfolioContact@2026</p>
+        </div>
+        <script>
+
+            document.getElementById("contactForm").addEventListener("submit", function(event){
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+
+            if(name=="" || email=="" || message=="")
+              {
+                alert("Please fill all fields");
+               }
+            else
+            {
+                 alert("Message sent successfully!");
+             }
+
+             });
+</script>
+    </body>
+</html>

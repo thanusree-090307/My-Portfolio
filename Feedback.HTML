@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>College Feedback System</title>
+    <link rel="stylesheet" href="Feedbackstyle.css">
+    <body>
+    <div class="container">
+        <div class="header">
+            <h1>College Feedback System</h1>
+            <p>KLH University Hyderabad</p>
+            </div>
+            <div class="content">
+            <h2 class="section-title">Feedback Form</h2>
+            <form class="feedback-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department">
+                        <option value="" selected>Select</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="ece">Electronics & Communication</option>
+                        <option value="me">Mechanical Engineering</option>
+                        <option value="ce">Civil Engineering</option>
+                        <option value="mba">Business Administration</option>
+                    </select>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <select id="rating" name="rating">
+                        <option value="" selected>Select</option>
+                        <option value="5">Excellent (5)</option>
+                        <option value="4">Very Good (4)</option>
+                        <option value="3">Good (3)</option>
+                        <option value="2">Average (2)</option>
+                        <option value="1">Poor (1)</option>
+                    </select>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" placeholder="Write your feedback"></textarea>
+                <div class="button-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="reset-btn">Reset</button>
+                </div>
+                <div class="footer">
+            <p>copy right @ <strong> 2026 KLH University Hyderabad | Feedback Portal</strong></p>
+        </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </body>
+</head>
